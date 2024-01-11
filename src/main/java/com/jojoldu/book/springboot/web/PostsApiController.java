@@ -15,6 +15,7 @@ public class PostsApiController {
 
     @PostMapping("/api/v1/posts")
     public Long save(@RequestBody PostsSaveRequestDto requestDto){
+        System.out.println("여기를 지나갑니다...");
         return postsService.save(requestDto);
     }
 
